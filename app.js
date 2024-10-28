@@ -44,15 +44,7 @@ function appendToDisplay(input){
         }
         display.value += input;
     }
-    else {
-        display.value = "turn on first".toUpperCase();
-        setTimeout(() => {
-            display.value = "";
-            updateDisplayState('off')
-    
-        }, 1000);
-    }
-
+   
    
 }
 
