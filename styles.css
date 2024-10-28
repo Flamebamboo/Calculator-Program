@@ -66,10 +66,9 @@ button:hover{
     max-height: 100px;
     max-width: 350px;
     border-radius: 0px;
-    color: #1a1b27;
-    background-color: beige;
     font-family: "Pixelify Sans", sans-serif;
     align-self: center;
+    background-color: #1a1b27;
 }
 
 
@@ -106,19 +105,46 @@ button:hover{
 /* display states stuff in here */
 
 .active {
-    
-    
+    animation: fadeIn 0.5s ease-in;
+    background-color: beige !important;
 }
 
 .on {
-
+    color: green;
+    background-color: beige !important;
+    animation: fadeIn 0.5s ease-in;
 }
 
+
 .off {
+    animation: fadeOut 0.5s ease-out;
+    color: #fff;
+    background-color: #1a1b27;
+
 
 }
 
 .error {
     color: red !important;
     font-weight: bold;
+}
+
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

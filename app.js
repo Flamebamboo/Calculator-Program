@@ -33,7 +33,7 @@ function turningOff(){
 
     setTimeout(() => {
         display.value = "";
-        updateDisplayState('active')
+        updateDisplayState('off')
 
     }, 1000);
 }
@@ -48,7 +48,7 @@ function appendToDisplay(input){
         display.value = "turn on first".toUpperCase();
         setTimeout(() => {
             display.value = "";
-            updateDisplayState('active')
+            updateDisplayState('off')
     
         }, 1000);
     }
@@ -79,7 +79,7 @@ function calculateResult(input){
     }
 
     else {
-        display.value = "turn on first".toUpperCase();
+        display.value = "turn on first".toUpperCase();o
         setTimeout(() => {
             display.value = "";
             updateDisplayState('active')
